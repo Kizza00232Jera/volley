@@ -1,3 +1,5 @@
+
+
 export default function ConForm() {
     function Submit(e){
         const formEle = document.querySelector(".contactForm")
@@ -7,7 +9,9 @@ export default function ConForm() {
         fetch("https://script.google.com/macros/s/AKfycbxKX1_v7vGPpNBALfDxLr71TSfuj_lOsFCvWJQo6S9gSLxxFwL6PSCR22M9_SuMwFmp/exec",{
             method: "POST",
             body: formData
-        })
+        }).then((res)=>res.json()).then((data)=>{
+            console.log(data)
+        }).catch((error)=>console.log(error))
     }
     return (
         <>
