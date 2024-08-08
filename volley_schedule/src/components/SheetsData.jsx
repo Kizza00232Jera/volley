@@ -22,19 +22,15 @@ export default function SheetsData() {
         <div>
             <h2>Sheets Data</h2>
             <table border="1">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Message</th>
-                    </tr>
-                </thead>
                 <tbody>
                     {data.map((row, index) => (
                         <tr key={index}>
                             <td>{row[0]}</td>
                             <td>{row[1]}</td>
                             <td>{row[2]}</td>
+                            <td>{row[3]}</td>
+                            <td>{row[4]}</td>
+                            <td>{row[5]}</td>
                         </tr>
                     ))}
                 </tbody>
