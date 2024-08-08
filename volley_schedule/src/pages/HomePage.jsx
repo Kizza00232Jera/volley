@@ -1,9 +1,9 @@
-import Header from '../components/Header'
+import ConForm from '../components/ConForm'
 
 export default function HomePage() {
     return (
         <>
-            <Header/>
+            <ConForm/>
             <h2>Home Page</h2>
         </>
     )
