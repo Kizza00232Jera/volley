@@ -1,6 +1,6 @@
 export default function ConForm() {
     function Submit(e) {
-        const formEle = document.querySelector(".contactForm");
+        const formEle = document.querySelector(".matchesForm");
         e.preventDefault();
         console.log('submitted');
         
@@ -22,8 +22,8 @@ export default function ConForm() {
 
     return (
         <>
-            <h2>Contact form</h2>
-            <form className="contactForm" onSubmit={(e) => Submit(e)}>
+            <h2>Matches form</h2>
+            <form className="matchesForm" onSubmit={(e) => Submit(e)}>
                 <input placeholder="Player" name="Player" type="text" />
                 <input placeholder="Group" name="Group" type="text" />
                 <input placeholder="Set Ratio" name="SetRatio" type="number" />
