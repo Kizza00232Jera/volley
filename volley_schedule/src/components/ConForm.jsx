@@ -4,7 +4,7 @@ export default function ConForm() {
         e.preventDefault()
         console.log('submited')
         const formData = new FormData(formEle)
-        fetch("",{
+        fetch("https://script.google.com/macros/s/AKfycbxKX1_v7vGPpNBALfDxLr71TSfuj_lOsFCvWJQo6S9gSLxxFwL6PSCR22M9_SuMwFmp/exec",{
             method: "POST",
             body: formData
         })
